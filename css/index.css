@@ -1,0 +1,364 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    background-color: #000;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    margin-left: 5%;
+    padding-top: 26px;
+}
+.navItems{
+    width: 14%;
+    align-items: center;
+}
+.navItems a{
+    margin-top: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.navLogo{
+margin-top: -1%;
+}
+.navSignIn img{
+margin-right: 5%;
+}
+.carouselSec{
+    background-color: #000;
+}
+.mySlides{
+    width: 80%; 
+    padding-top: 1%;
+}
+
+.carouselSec{
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next{
+cursor: pointer;
+text-decoration: none;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: #fff;
+font-weight: 100;
+font-size: 100px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.slidesText{
+    color: #fff;
+    font-size: 72px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+.fades{
+    animation-name: fades;
+    animation-duration: 1.5s;
+}
+@keyframes fades{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+.centralBg{
+    background-color: #000000;
+    background-image: url(../images/Фоновые\ элементы.png);
+    width: 100%;
+    background-repeat: no-repeat;
+
+}
+.navInMenu{
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+}
+.navMenuList{
+    display: flex;
+    width: 100%;
+    margin-right: 5%;
+}
+.menuTxt{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+    text-decoration: none;
+    margin-left: 5%;
+
+    color: #fff;
+}
+.menuTxt:hover{
+    color: #fff;
+}
+.navMenuItem{
+    width: 10%;
+    margin-top: 1.5%;
+    text-align: center;
+
+    text-decoration: none;
+}
+.navMenuItem:hover{
+    font-size: 18px;
+    text-decoration: none;
+
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    color: #fff;
+}
+.navMenuItem a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #fff;
+    }
+    .navMenuItem a:hover{
+        color: #fff;
+    }
+.navMenuItemP{
+    width: 12%;
+}
+.newMeals{
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 13%;
+    margin-right: 2%;
+}
+.meal{
+    width: 25%;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
+.meal img{
+    width: 100%;
+}
+.mealName{
+    margin-top: 4%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+.mealDiscription{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+}
+.priceQuantityBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.price{
+    margin-top: 5%;
+    width: 30%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF; 
+}
+.Quantity{
+    display: flex;
+    width: 30%;
+    margin: auto;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    align-items: center;
+}
+.plusBtn{
+    width: 25%;
+    background: none;
+    border: none;
+    
+    color: #FFFFFF;
+
+    align-items: center;
+
+    width: 7px;
+    height: 22px;
+    margin-right: 3%;
+}
+.minusBtn{
+    margin-right: 2%;
+    width: 25%;
+    color: #FFFFFF;
+
+    background: none;
+    border: none;
+}
+.Quantity p{
+    width: 30%;
+    margin-left: 2%;
+    text-align: center;
+
+    margin-top: 20%;
+}
+.buyBtn{
+    background: inherit;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+
+    width: 117px;
+    height: 40px;
+}
+.mainTxtAU{
+    margin-top: 10%;
+}
+.txtAU{
+    margin-left: 5%;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+
+
+    color: #FFFFFF;
+}
+.contentAU{
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
+}
+.imgContentAU{
+    width: 60%;
+    margin-right: 5%;
+}
+.imgContentAU img{
+    width: 100%;
+}
+.txtContentAU{
+    width: 40%;
+
+    font-size: 18px;
+    line-height: 156%;
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+    .socialImgInSlide{
+        background-image: url(../images/luca-bravo-8x_fFNrmeDk-unsplash\ 1.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+    }
+    .carouselInSC{
+        margin-top: 10%;
+    }
+    .socialImgInSlide{
+        padding-top: 8%;
+    }
+    .slideImg img{
+        text-align: center;
+        margin-left: 15%;
+
+    }
+    .contentInFtr{
+        margin-top: 10%;
+        display: flex;
+        margin-left: 5%;
+    }
+    .logoFtr{
+        width: 20%;
+        margin-right: 5%;
+    }
+    .logoFtr img{
+        width: 100%;
+    }
+    .workTimeFtr{
+        margin-top: 5%;
+    }
+    .mainTxtFtr{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+
+        letter-spacing: 0.01em;
+
+        color: #FFFFFF;
+    }
+    .miniTxtFtr p{
+        width: 100%;
+    }
+    .miniTxtFtr{
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+
+        letter-spacing: 0.01em;
+
+        color: #FFFFFF;
+    }
+    .numberFtr{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .adressFtr{
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    .socialsFtr{
+        width: 20%;
+        text-align: end;
+        display: flex;
+        flex-direction: column;
+    }
+    .socialsFtr img{
+        margin-bottom: 10%;
+    }
+    .footer{
+        padding-bottom: 50px;
+    }
+    .prev,
+    .next {
+    position: absolute;
+    top: 45%;
+    width: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.next {
+  right: 0;
+}

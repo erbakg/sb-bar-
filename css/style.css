@@ -1,0 +1,1059 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+}
+.phoneimg{
+    position: absolute;
+    top: 900px;
+}
+/* header */
+
+#firstnav{
+    width: 70%;
+    height: 15%;
+    margin: 0 9% 0 9%;
+    padding-top: 1.9%;
+    font-family: 'Montserrat', sans-serif;
+}
+#firstnav>ul>a>img{
+    position: absolute;
+    top: 3%;
+    margin-left: -1%;
+}
+#firstnav>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 15%;
+}
+#firstnav>ul>a>li{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+/* slaider */
+
+
+#slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 60px;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{ /*размер изображений слайдера*/
+	width: 100%;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 1290px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('../icons/Стрелка\ влево.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: 0 0 0 -84px; /*сдвиг влево*/
+	display: block;
+	height: 100px;
+    width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('../icons/Стрелка\ вправо.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0 -94px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 100px;
+    width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+	margin-left: -400%;
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -38% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.3;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.4s ease-out;
+}
+.phototxt{
+    position: absolute;
+    color: white;
+    font-size: 72px;
+    top: 700px;
+    left: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* navigation */
+.navel{
+    padding-top: 35%;
+    position: absolute;
+    margin-left: 14%;
+    
+}
+.navel>.secblock>a>li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-left: 24.5px;
+    padding-top: 20%;
+    list-style-type: none;
+    color: white;
+    display: block;
+    padding: 0 0 0 20px;
+}
+.secblock{
+    display: flex;
+    text-align: center;
+}
+.huge:nth-child(1n){
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin-top: -20%;
+}
+.secblock>a:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* cards */
+
+#cards{
+    margin-top: 39%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+.txt{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#cards2{
+    margin-top: 13%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+#cards3{
+    margin-top: 13%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+/* about section */
+
+.hotel{
+    width: 80%;
+    height: 100%;
+    padding-top: 6%;
+    position: relative;
+ }
+ h6{
+    font-size: 2em;
+    color: white;
+    font-style: bold;
+    font-weight: normal;
+    margin-top: 15.5%;
+    margin-left: 12%;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+ }
+ .tex{
+    position: absolute;
+    margin-top: 26%;
+    margin-left: 59%;
+    width: 37%;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+ }
+ .bigph img{
+    margin-top: 23%;
+    margin-left: 12%;  
+ }
+
+
+
+
+
+
+
+ 
+ /* slaider */
+
+.slaider__seconf{
+    margin-top: 50%;
+}
+ .about__text {
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.slider-one{
+    position: relative;
+    height: 500px;
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.33), rgba(20, 20, 20, 0.33)), url(luca-bravo-8x_fFNrmeDk-unsplash.jpg);
+    backdrop-filter: blur(4px);
+}
+.slider-items{
+    position: absolute;
+    top: 82px;
+    left: 10%;
+}
+.slider-items-2{
+    position: absolute;
+    top: 82px;
+    left: 40%;
+}
+.slider-items-3{
+    position: absolute;
+    top: 82px;
+    left: 70%;
+}
+.prev{
+    margin-top: -200px;
+}
+.next{
+    margin-top: -200px;
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    position: relative;
+    margin-top: 64%;
+}
+.icon{
+    margin-left: 10%;
+    
+}
+.work{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -9%;
+    margin-left: 27%;
+}
+.workTime{
+    font-size: 18px;
+    font-weight: bold;
+}
+.phone{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -9%;
+    margin-left: 45%;
+}
+.phoneNumber{
+    font-size: 18px;
+    font-weight: bold;
+}
+.geo{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -9%;
+    margin-left: 63%;
+}
+.geodan{
+    font-size: 18px;
+    font-weight: bold;
+}
+.icons{
+    margin-left: 86%;
+    margin-top: -9%;
+}
+
+
+/* second PAge */
+
+#firstnav2{
+    width: 70%;
+    height: 15%;
+    margin: 0 9% 0 9%;
+    padding-top: 1.9%;
+    font-family: 'Montserrat', sans-serif;
+}
+#firstnav2>ul>a>img{
+    position: absolute;
+    top: 2%;
+    margin-left: -1%;
+}
+#firstnav2>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 15%;
+}
+#firstnav2>ul>a>li{
+    color: white;
+}
+
+.phoneimg2{
+    position: absolute;
+    top: 170px;
+}
+.navel2{
+    padding-top: 8%;
+    position: absolute;
+    margin-left: 5.2%;
+}
+.navel2>.secblock2>a>li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 20%;
+    list-style-type: none;
+    color: white;
+    display: block;
+    padding: 0 0 0 20px;
+}
+.secblock2{
+    display: flex;
+    text-align: center;
+}
+.huge2:nth-child(1n){
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin-top: -20%;
+}
+.secblock2>a:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.menufooter{
+    margin-top: 30%;
+}
+/* cards */
+
+.txt2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+#cards22{
+    margin-top: 19%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+#cards32{
+    margin-top: 19%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+.menubutton>button{
+    margin-top: 25%;
+    left: 40%;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    width: 276px;
+    height: 50px;
+    border: 1px solid #FFFFFF;
+}
+
+/* footer2 */
+#footer2{
+    margin-top: 35%;
+}
+.work2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 27%;
+}
+.workTime2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.phone2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 45%;
+}
+.phoneNumber2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.geo2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    position: absolute;
+    margin-top: -11%;
+    margin-left: 63%;
+}
+.geodan2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.icons2{
+    margin-left: 86%;
+    margin-top: -13%;
+}
+
+
+
+
+
+
+/* 3 page */
+
+
+.phoneimg3{
+    position: absolute;
+    top: 240px;
+    left: 220px;
+}
+h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10%;
+    left: 180px;
+    position: absolute;
+}
+
+/* karty */
+.stock{
+    margin-top: 10%;
+}
+h2{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -5%;
+}
+.cart-stock1{
+    position: absolute;
+    margin-left: 11%;
+    width: 100%;
+}
+.description{
+    color: white;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -25%;
+    font-family: 'Montserrat', sans-serif;
+}
+h3{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 45%;
+    margin-top: -29%;
+    position: absolute;
+}
+
+.dollar{
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: red;
+    margin-left: 48%;
+    margin-top: -19%;
+    position: absolute;
+}
+
+.dollar2{
+    font-size: 20px;    
+    color: green;
+    margin-left: 57%;
+    margin-top: -18.9%;
+}
+.butan{
+    margin-top: 3%;
+    margin-left: 50%;
+}
+/* second */
+.cart-stock2{
+    margin-top: 19%;
+    position: absolute;
+    margin-left: 23%;
+    width: 100%;
+}
+.secondCard{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -21%;
+    margin-top: -29%;
+    position: absolute;
+}
+.description2{
+    color: white;
+    position: absolute;
+    margin-left: -28%;
+    margin-top: -25%;
+    font-family: 'Montserrat', sans-serif;
+}
+.butan2{
+    margin-top: 3%;
+    margin-left: -15%;
+}
+
+.dollar23{
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: red;
+    margin-left: -28%;
+    margin-top: -19%;
+    position: absolute;
+}
+
+.dollar22{
+    font-size: 20px;    
+    color: green;
+    margin-left: -20%;
+    margin-top: -18.9%;
+}
+/* third */
+
+.cart-stock3{
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 11%;
+    width: 100%;
+}
+.description3{
+    color: white;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -25%;
+    font-family: 'Montserrat', sans-serif;
+}
+.dollar3{
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: red;
+    margin-left: 48%;
+    margin-top: -19%;
+    position: absolute;
+}
+
+.dollar233{
+    font-size: 20px;    
+    color: green;
+    margin-left: 57%;
+    margin-top: -18.9%;
+}
+.butan3{
+    margin-top: 3%;
+    margin-left: 50%;
+}
+
+/* fourth */
+
+.cart-stock4{
+    margin-top: 19%;
+    margin-top: 57%;
+    position: absolute;
+    margin-left: 23%;
+    width: 100%;
+}
+.secondCard4{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -17%;
+    margin-top: -29%;
+    position: absolute;
+}
+.description4{
+    color: white;
+    position: absolute;
+    margin-left: -28%;
+    margin-top: -25%;
+    font-family: 'Montserrat', sans-serif;
+}
+.butan4{
+    margin-top: 1%;
+    margin-left: -15%;
+}
+
+.dollar4{
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: red;
+    margin-left: -25%;
+    margin-top: -16%;
+    position: absolute;
+}
+
+.dollar24{
+    font-size: 20px;    
+    color: green;
+    margin-left: -15%;
+    margin-top: -16%;
+}
+
+/* 5 card */
+.cart-stock5{
+    position: absolute;
+    margin-top: 151%;
+    margin-left: 11%;
+    width: 100%;
+}
+.description5{
+    color: white;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: -25%;
+    font-family: 'Montserrat', sans-serif;
+}
+.dollar5{
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: red;
+    margin-left: 48%;
+    margin-top: -19%;
+    position: absolute;
+}
+
+.dollar25{
+    font-size: 20px;    
+    color: green;
+    margin-left: 57%;
+    margin-top: -18.9%;
+}
+.butan5{
+    margin-top: 3%;
+    margin-left: 50%;
+}
+/* 6 card */
+
+.cart-stock6{
+    margin-top: 19%;
+    margin-top: 95%;
+    position: absolute;
+    margin-left: 23%;
+    width: 100%;
+}
+.secondCard6{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -29%;
+    margin-top: -29%;
+    position: absolute;
+}
+.description6{
+    color: white;
+    position: absolute;
+    margin-left: -28%;
+    margin-top: -25%;
+    font-family: 'Montserrat', sans-serif;
+}
+.butan6{
+    margin-top: 1%;
+    margin-left: -15%;
+}
+
+.dollar6{
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: red;
+    margin-left: -25%;
+    margin-top: -16%;
+    position: absolute;
+}
+
+.dollar26{
+    font-size: 20px;    
+    color: green;
+    margin-left: -15%;
+    margin-top: -16%;
+}
+.akcifooter{
+    margin-top: 233%;
+}
+/* 4page */
+.phoneimg4{
+    position: absolute;
+    margin-top: 3%;
+}
+.down{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 100%;
+}
+.contact{
+    height: 500px;
+    position: absolute;
+    color: white;
+    margin-left:7% ;
+    margin-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.number2{
+    font-family: 'Montserrat', sans-serif;
+    height: 500px;
+    position: absolute;
+    color: white;
+    margin-left:7% ;
+    margin-top: 20%;
+}
+.addres{
+    font-family: 'Montserrat', sans-serif;
+    height: 500px;
+    position: absolute;
+    color: white;
+    margin-left:7% ;
+    margin-top: 30%;
+}
+.instagram2{
+position: absolute;
+margin-left: 7%;
+margin-top: 37%;
+}
+.whatsapp2{
+    position: absolute;
+margin-left: 12%;
+margin-top: 37%;
+}
+.facebook2{
+    position: absolute;
+margin-left: 17%;
+margin-top: 37%;
+}
+.photo{
+    width: 80%;
+    display: flex;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 10%;
+}
+.logo2{
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   margin-top: 49%;
+   margin-left: 7%;
+}
+.reshim{
+    font-family: 'Montserrat', sans-serif;
+   color: white;
+   margin-top: 50%;
+   position: absolute;
+   margin-left: 24%;
+}
+.bol{
+   font-size: 24px;
+}
+.reshim2{
+    font-family: 'Montserrat', sans-serif;
+   color: white;
+   margin-top: 50%;
+   position: absolute;
+   margin-left: 40%;
+}
+.bol2{
+   font-size: 24px;
+}
+.reshim3{
+    font-family: 'Montserrat', sans-serif;
+   color: white;
+   margin-top: 50%;
+   position: absolute;
+   margin-left: 60%;
+}
+.bol3{
+   font-size: 24px;
+}
+.instagram{
+   position: absolute;
+   margin-top: 50%;
+   position: absolute;
+   margin-left: 85%;
+}
+.whatsapp{
+   margin-top: 55%;
+   position: absolute;
+   margin-left: 85%;
+}
+.facebook{
+   margin-top: 60%;
+   position: absolute;
+   margin-left: 85%;
+}
+
+.foter{
+   top: -10%;
+}
+
+
+#map{
+    position: absolute;
+    margin-left: 36.2%;
+    margin-top: 5%;
+}
+/* footer3 */
+#footer3{
+    padding-top: 190%;
+}
+
+
+/* entrance */
+.wine>img{
+    margin-top: 1.2%;
+    width: 550px;
+    height: 470px;
+}
+.wineimg{
+    margin-left: 46%;
+    margin-top: 1%;
+}
+.registr{
+    display: flex;
+    margin-left: 30%;
+}
+.registr>a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.regi{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-top: 1.3%;
+    position: absolute;
+}
+
+
+/* inputs */
+.inputs{
+    margin-left: 26%;
+    position: absolute;
+}
+.pervinput>input{
+    border: 1px solid white;
+    width: 600px;
+    height: 40px;
+    background-color: black;
+}
+.pervinput>p{
+    color: white;
+}
+.vtoroinput>input{
+    border: 1px solid white;
+    width: 600px;
+    height: 40px;
+    background-color: black;
+}
+.vtoroinput>p{
+    color: white;
+}
+.chekbox{
+    margin-top: 2%;
+}
+.chekbox>input{
+   background-color: black;
+   border: 1px solid white;
+}
+.chekbox>p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 13px;
+    margin-left: 5%;
+    margin-top: -2.5%;
+}
+.passwor>a{
+    color: #FFFFFF;
+    margin-left: 60%;
+    margin-top: 14.5%;
+    position: absolute;
+}
+.menubutton2>button{
+    margin-top: 20%;
+    left: 41%;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+}
+
+
+/* registr */
+.olivka{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+.bokal{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 78%;
+    margin-top: 50%;
+}
+.menubutton3>button{
+    margin-top: 20%;
+    left: 34%;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+}
+
+
+/* busket */
+#firstnavBusket{
+    width: 70%;
+    height: 15%;
+    margin: 0 9% 0 9%;
+    padding-top: 1.9%;
+    font-family: 'Montserrat', sans-serif;
+}
+#firstnavBusket>ul>a>img{
+    position: absolute;
+    top: 3%;
+    margin-left: -1%;
+}
+#firstnavBusket>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 15%;
+}
+#firstnavBusket>ul>a>li{
+    color: white;
+    position: absolute;
+}
+.bolnoili{
+    position: absolute;
+    margin-top: -90%;
+    margin-left: 100%;
+}
+#busket{
+    height: 2490px;
+    width: 100%;
+}
+.phoneimg6{ 
+    position: absolute; 
+    margin-top: 25%; 
+}
+.vxod{
+    padding-top: -10%;
+}
+.busketcard>img{
+    position: absolute;
+    margin-left: 13%;
+    width: 440px;
+    height: 260px;
+}
+.psh{
+    margin-left: 42.5%;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+.busketp{
+    color: white;
+    margin-left: 49%;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+.plus>button{
+    position: absolute;
+    margin-left: 51%;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    background: none;
+}
+p{
+    color: white;
+}

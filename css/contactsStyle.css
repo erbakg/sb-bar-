@@ -1,0 +1,94 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.navItems{
+    width: 14%;
+    align-items: center;
+}
+.navItems a{
+    margin-top: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.navLogo{
+margin-top: -1%;
+}
+.navSignIn img{
+margin-right: 5%;
+}
+.footer{
+    margin-top: 50%;
+}
+
+.contentInFtr{
+    margin-top: 10%;
+    display: flex;
+    margin-left: 5%;
+}
+.logoFtr{
+    width: 20%;
+    margin-right: 5%;
+}
+.logoFtr img{
+    width: 100%;
+}
+.workTimeFtr{
+    margin-top: 5%;
+}
+.mainTxtFtr{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.miniTxtFtr p{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.miniTxtFtr{
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+.numberFtr{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.adressFtr{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.socialsFtr{
+    width: 20%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+}
+.socialsFtr img{
+    margin-bottom: 10%;
+}
+.footer{
+    padding-bottom: 50px;
+}
+.prev,
+.next {
+position: absolute;
+top: 45%;
+width: 40px;
+z-index: 1;
+cursor: pointer;
+}
+
+.next {
+right: 0;
+}
